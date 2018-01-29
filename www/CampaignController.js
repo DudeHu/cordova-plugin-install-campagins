@@ -2,9 +2,9 @@ var exec = require('cordova/exec');
 
 var safesmsExport = {};
 
-safesmsExport.get = function(options, successCallback, failureCallback) {
+safesmsExport.getParams = function(options, successCallback, failureCallback) {
     if (typeof options === 'object') {
-        cordova.exec(successCallback, failureCallback, 'CampaignController', 'get', options);
+        cordova.exec(successCallback, failureCallback, 'CampaignController', 'getParams', options);
     } else {
         if (typeof failureCallback === 'function') {
             failureCallback('options should be specified.');

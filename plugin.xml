@@ -28,14 +28,14 @@
             </feature>
         </config-file>
         
-        <config-file target="AndroidManifest.xml" parent="/*">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
 		    <receiver android:enabled="true" android:exported="true" android:name="com.dude.plugins.install.PlayCampaignReceiver">
                 <intent-filter android:priority="2147483647">
                     <action android:name="com.android.vending.INSTALL_REFERRER" />
                 </intent-filter>
             </receiver>
         </config-file>
-		<source-file src="src/android/CampaignsController.java" target-dir="src/com/dude/plugins/install"/>
+		<source-file src="src/android/CampaignController.java" target-dir="src/com/dude/plugins/install"/>
         <source-file src="src/android/PlayCampaignReceiver.java" target-dir="src/com/dude/plugins/install"/>
     </platform>
 
