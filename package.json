@@ -1,14 +1,13 @@
 {
-    "name": "cordova-plugin-face-recognition",
+    "name": "cordova-plugin-install-campagins",
     "version": "1.0.0",
-    "description": "a cordova plugin of face recognition",
-    "main": "index.js",
+    "description": "a cordova plugin to get install campagins ",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/huyuqiong/cordova-plugin-face-recognition.git"
+        "url": "git+https://github.com/huyuqiong/cordova-plugin-install-campagins.git"
     },
     "keywords": [
         "codova",
@@ -17,7 +16,7 @@
     "author": "huyuqiong",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/huyuqiong/cordova-plugin-face-recognition/issues"
+        "url": "https://github.com/huyuqiong/cordova-plugin-install-campagins/issues"
     },
-    "homepage": "https://github.com/huyuqiong/cordova-plugin-face-recognition#readme"
+    "homepage": "https://github.com/huyuqiong/cordova-plugin-install-campagins#readme"
 }
