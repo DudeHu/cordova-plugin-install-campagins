@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-install-campagins"
+    android-versionCode="1"
+	version="0.0.1">
+      
+    <name>FaceRecognition</name>
+	<description>Cordova plugin telephony to recognize face move.</description>
+	<author>huyuqiong</author>
+	<license>MIT</license>
+	<keywords>face,recognition,plugins</keywords>
+
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+    <js-module src="www/CampaignController.js" name="CampaignController">
+        <clobbers target="window.CampaignController" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CampaignController">
+                <param name="android-package" value="com.dude.plugins.install.CampaignController"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+		    <receiver android:enabled="true" android:exported="true" android:name="com.dude.plugins.install.PlayCampaignReceiver">
+                <intent-filter android:priority="2147483647">
+                    <action android:name="com.android.vending.INSTALL_REFERRER" />
+                </intent-filter>
+            </receiver>
+        </config-file>
+		<source-file src="src/android/CampaignsController.java" target-dir="src/com/dude/plugins/install"/>
+        <source-file src="src/android/PlayCampaignReceiver.java" target-dir="src/com/dude/plugins/install"/>
+    </platform>
+
+</plugin>

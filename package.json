@@ -1,0 +1,23 @@
+{
+    "name": "cordova-plugin-face-recognition",
+    "version": "1.0.0",
+    "description": "a cordova plugin of face recognition",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/huyuqiong/cordova-plugin-face-recognition.git"
+    },
+    "keywords": [
+        "codova",
+        "face"
+    ],
+    "author": "huyuqiong",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/huyuqiong/cordova-plugin-face-recognition/issues"
+    },
+    "homepage": "https://github.com/huyuqiong/cordova-plugin-face-recognition#readme"
+}
