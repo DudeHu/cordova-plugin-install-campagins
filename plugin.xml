@@ -6,11 +6,11 @@
     android-versionCode="1"
 	version="0.0.1">
       
-    <name>FaceRecognition</name>
-	<description>Cordova plugin telephony to recognize face move.</description>
+    <name>InstallCampagins</name>
+	<description>Cordova plugin to get install campains</description>
 	<author>huyuqiong</author>
 	<license>MIT</license>
-	<keywords>face,recognition,plugins</keywords>
+	<keywords>Campagins ,plugins</keywords>
 
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
