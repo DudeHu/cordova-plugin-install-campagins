@@ -18,8 +18,12 @@ public class PlayCampaignReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.e(LOGTAG, "****************************");
-        REFERENCE = intent.getStringExtra("referrer");
-        Log.e(LOGTAG, REFERENCE);
+        try {
+            REFERENCE = intent.getStringExtra("referrer");
+            Log.e(LOGTAG, REFERENCE);
+        } catch (NullPointerException e) {
+            Log.e(LOGTAG, "REFERENCE is null");
+        }
         new CampaignTrackingReceiver().onReceive(context, intent);
     }
 }
